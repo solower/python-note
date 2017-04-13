@@ -64,6 +64,6 @@ portinfo = {
           }
         }
 
-myes = Elasticsearch("http://172.16.3.166:9200/")    
+myes = Elasticsearch("http://es-server:9200/")    
 es = ElasticBase(elastic=myes,index="myindex",type="mytype")
 es.insert(mydns)
